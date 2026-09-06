@@ -118,7 +118,7 @@
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px;">
       <sc-for list="{{ courses }}" as="c" hint-placeholder-count="4">
         <article style="background: #FDF8EF; border: 1px solid rgba(46,28,17,0.12); border-radius: 24px; overflow: hidden; display: flex; flex-direction: column;" style-hover="border-color: rgba(169,80,43,0.55);">
-          <div style="height: 190px; position: relative; background: #EBDCC2; overflow: hidden;">
+          <div style="height: 280px; position: relative; background: #EBDCC2; overflow: hidden;">
             <img src="{{ c.img }}" alt="{{ c.name }}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
           </div>
           <div style="padding: 24px; display: flex; flex-direction: column; gap: 12px; flex: 1;">
@@ -236,9 +236,9 @@ class Component extends DCLogic {
       hideTip: () => this.setState({ tip: false }),
       courses: [
         { name: "Dulcería con pulpa de café", desc: "Convierte la pulpa de café en dulces, mermeladas y confites con procesos estandarizados.", url: "https://hotm.art/dulceriaconpulpadecafe", img: "curso-dulceria-pulpa-cafe.png" },
-        { name: "Vino de pulpa de café", desc: "Fermentación controlada de la pulpa para producir un vino con aroma e identidad propia.", url: "https://web-muse-magic-88.lovable.app/", img: "curso-vino-pulpa-cafe.png" },
+        { name: "Vino de pulpa de café", desc: "Fermentación controlada de la pulpa para producir un vino con aroma e identidad propia.", url: "https://web-muse-magic-88.lovable.app", img: "curso-vino-pulpa-cafe.png" },
         { name: "Dulcería de mucílago de cacao", desc: "Aprovecha el mucílago del cacao en preparaciones dulces listas para vender.", url: "https://nativoterrus.systeme.io/dulceriadecacao", img: "curso-dulceria-mucilago-cacao.jpg" },
-        { name: "Vino de cacao", desc: "Del mucílago de cacao a un vino con carácter: fermentación, clarificación y envasado.", url: "https://cacao-web-creation.lovable.app/", img: "curso-vino-cacao.png" }
+        { name: "Vino de cacao", desc: "Del mucílago de cacao a un vino con carácter: fermentación, clarificación y envasado.", url: "https://cacao-web-creation.lovable.app", img: "curso-vino-cacao.png" }
       ],
       pillars: [
         { num: "01", title: "Experiencia agroindustrial real", body: "Procesos probados en campo y planta, no teoría suelta: lo que enseñamos se aplica con los recursos que ya tienes." },
